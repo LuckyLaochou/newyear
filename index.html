@@ -85,7 +85,7 @@
         </div>
         <div class="stage-container remove">
             <div class="page_two hide">
-                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br><br>彩蛋:点击屏幕任意地方即可放烟花<span id="copyright"></span></p></div>
+                <div id="text" style="display:none;"><p>倒计时<br><br>还有<span id="time"></span><br><span id="text1"></span><br><br><span id="text2"></span><br><br><span id="text3"></span><br><br>彩蛋:点击屏幕任意地方即可放烟花<span id="copyright"></span></p></div>
                 <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
             </div>
             <div class="canvas-container">
@@ -261,6 +261,9 @@
         minutes) / seconds)
      if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是1月1日,祝你"+todayYear+"新年快乐！"}}
      else{document.getElementById("text1").innerHTML =  "提前祝你"+newYear+"新年快乐"}
+     document.getElementById("text2").innerHTML = "付憨憨、（-1,0）、付一霖，祝你新年快乐哈。刚开始的你，想起来就很想笑，总是那么的灵性。"
+     document.getElementById("text3").innerHTML = "不过现在已经变得很可爱啦。今天收到了你的礼物，我很喜欢呢，感谢你陪我过以前没有过过的生日呢。你已经看过现实生活中的烟花，你也得看看程序届烟花的绚丽吧。"
+
      document.getElementById("time").innerHTML =  diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒"+newYear
 }
 time()
